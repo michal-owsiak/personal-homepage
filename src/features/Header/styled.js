@@ -7,10 +7,6 @@ export const StyledHeader = styled.header`
   grid-template-columns: auto 1fr;
 `;
 
-export const Wrapper = styled.div`
-  padding-left: 66px;
-`;
-
 export const ThisIs = styled.h2`
   color: ${({ theme }) => theme.color.slateGray};
   font-size: 12px;
@@ -33,6 +29,17 @@ export const Bio = styled.p`
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 auto 32px;
   word-wrap: break-word;
 `;
+
+export const Button = styled.button`
+  border: 1px;
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.scienceBlue};
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+`
