@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { ReactComponent as MessageIcon } from "./Button/Message.svg";
 
 export const StyledHeader = styled.header`
   max-width: 1216px;
   margin: 115px auto 0;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-gap: 66px;
 `;
 
 export const ThisIs = styled.h2`
@@ -33,13 +35,7 @@ export const Bio = styled.p`
   word-wrap: break-word;
 `;
 
-export const Button = styled.button`
-  border: 1px;
-  border-radius: 4px;
-  padding: 12px 16px;
-  color: ${({ theme }) => theme.color.white};
-  background: ${({ theme }) => theme.color.scienceBlue};
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-`
+export const Message = styled(MessageIcon)`
+  height: 24px;
+  width: 24px;
+`;

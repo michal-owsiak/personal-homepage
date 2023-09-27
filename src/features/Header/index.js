@@ -1,13 +1,13 @@
 import Picture from "./Picture";
-import { name, bio } from "../copy";
+import Button from "./Button"
 import {
   StyledHeader,
-  Wrapper,
   ThisIs,
   Name,
   Bio,
-  Button,
+  Message,
 } from "./styled";
+import { name, bio } from "../copy";
 
 const Header = () => (
   <StyledHeader>
@@ -16,7 +16,9 @@ const Header = () => (
       <ThisIs>This is</ThisIs>
       <Name>{name}</Name>
       <Bio>{bio}</Bio>
-      <Button>Hire Me</Button>
+      <Button 
+        icon={<Message />}
+        caption={"Hire Me"} />
     </div>
   </StyledHeader>
 );
