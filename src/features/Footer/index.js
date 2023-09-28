@@ -4,8 +4,8 @@ import {
   MailLink,
   MailText,
   Caption,
-  Socials,
 } from "./styled";
+import Socials from "./Socials";
 
 const Footer = ({ mail, text }) => (
   <StyledFooter>

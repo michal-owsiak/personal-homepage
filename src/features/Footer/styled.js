@@ -32,8 +32,5 @@ export const Caption = styled.p`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
-`;
-
-export const Socials = styled.div`
-
+  margin-bottom: 56px;
 `;
