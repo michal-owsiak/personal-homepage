@@ -2,6 +2,7 @@ import Section from "./common/Section";
 import Header from "./features/Header";
 import List from "./common/List";
 import { skillsetList, toLearnList } from "./features/copy";
+import Portfolio from "./features/Portfolio";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         title="What I want to learn next 🚀"
         content={<List content={toLearnList} />}
       />
+      <Portfolio />
     </>
   );
 }
