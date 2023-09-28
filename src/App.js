@@ -1,8 +1,14 @@
-import Section from "./common/Section";
 import Header from "./features/Header";
+import Section from "./common/Section";
 import List from "./common/List";
-import { skillsetList, toLearnList } from "./copy";
 import Portfolio from "./features/Portfolio";
+import Footer from "./features/Footer";
+import {
+  skillsetList,
+  toLearnList,
+  mail,
+  footerCaption,
+} from "./copy";
 
 function App() {
   return (
@@ -17,6 +23,10 @@ function App() {
         content={<List content={toLearnList} />}
       />
       <Portfolio />
+      <Footer
+        mail={mail}
+        text={footerCaption}
+      />
     </>
   );
 }
