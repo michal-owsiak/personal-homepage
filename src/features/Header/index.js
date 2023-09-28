@@ -18,7 +18,7 @@ const Header = () => (
       <Bio>{bio}</Bio>
       <Button 
         icon={<Message />}
-        caption={"Hire Me"} />
+        caption="Hire Me" />
     </div>
   </StyledHeader>
 );
