@@ -1,5 +1,7 @@
 import Section from "./common/Section";
-import Header from "./features/Header"
+import Header from "./features/Header";
+import List from "./common/List";
+import { skillsetList, toLearnList } from "./features/copy";
 
 function App() {
   return (
@@ -7,11 +9,11 @@ function App() {
       <Header />
       <Section
         title="My skillset includes 🛠️"
-        content=""
+        content={<List content={skillsetList} />}
       />
       <Section
         title="What I want to learn next 🚀"
-        content=""
+        content={<List content={toLearnList} />}
       />
     </>
   );
