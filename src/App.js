@@ -1,7 +1,7 @@
 import Section from "./common/Section";
 import Header from "./features/Header";
 import List from "./common/List";
-import { skillsetList, toLearnList } from "./features/copy";
+import { skillsetList, toLearnList } from "./copy";
 import Portfolio from "./features/Portfolio";
 
 function App() {
