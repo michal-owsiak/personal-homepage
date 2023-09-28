@@ -7,7 +7,7 @@ import {
   Bio,
   Message,
 } from "./styled";
-import { name, bio } from "../copy";
+import { name, bio } from "../../copy";
 
 const Header = () => (
   <StyledHeader>

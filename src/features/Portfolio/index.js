@@ -1,11 +1,12 @@
 import github from "./github.svg"
+import Projects from "./Projects";
+import { projects } from "../../copy"
 import {
   StyledPortfolio,
   Wrapper,
   GitHubIcon,
   Header,
   Subheader,
-  Projects,
 } from "./styled";
 
 const Portfolio = () => (
@@ -15,7 +16,7 @@ const Portfolio = () => (
       <Header>Portfolio</Header>
       <Subheader>My recent projects</Subheader>
     </Wrapper>
-    <Projects />
+    <Projects content={projects}/>
   </StyledPortfolio>
 );
 

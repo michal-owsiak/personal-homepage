@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledPortfolio = styled.div`
-
+  margin: 0 auto 120px;
 `;
 
 export const Wrapper = styled.div`
@@ -30,9 +30,5 @@ export const Subheader = styled.h2`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
-  margin: 0;
-`;
-
-export const Projects = styled.div`
-
+  margin: 0 auto 24px;
 `;
