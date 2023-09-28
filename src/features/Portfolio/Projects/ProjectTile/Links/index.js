@@ -1,4 +1,4 @@
-import { 
+import {
   Wrapper,
   Title,
   Link,
@@ -8,11 +8,23 @@ const Links = ({ demoLink, codeLink }) => (
   <>
     <Wrapper>
       <Title>Demo:&nbsp;</Title>
-      <Link>{demoLink}</Link>
+      <Link
+        href={demoLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {demoLink}
+      </Link>
     </Wrapper>
     <Wrapper>
       <Title>Code:&nbsp;</Title>
-      <Link>{codeLink}</Link>
+      <Link
+        href={codeLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {codeLink}
+      </Link>
     </Wrapper>
   </>
 );
