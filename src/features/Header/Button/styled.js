@@ -11,4 +11,5 @@ export const StyledButton = styled.button`
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor: pointer;
 `

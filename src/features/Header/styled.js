@@ -38,3 +38,8 @@ export const Message = styled(MessageIcon)`
   height: 24px;
   width: 24px;
 `;
+
+export const MailLink = styled.a`
+  display: inline-block;
+  text-decoration: none;
+`;

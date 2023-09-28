@@ -6,8 +6,9 @@ import {
   Name,
   Bio,
   Message,
+  MailLink,
 } from "./styled";
-import { name, bio } from "../../copy";
+import { name, bio, mail } from "../../copy";
 
 const Header = () => (
   <StyledHeader>
@@ -16,9 +17,9 @@ const Header = () => (
       <ThisIs>This is</ThisIs>
       <Name>{name}</Name>
       <Bio>{bio}</Bio>
-      <Button 
-        icon={<Message />}
-        caption="Hire Me" />
+      <MailLink href={`mailto:${mail}`}>
+        <Button icon={<Message />} caption="Hire Me" />
+      </MailLink>
     </div>
   </StyledHeader>
 );
