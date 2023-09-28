@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledSection = styled.div`
   background: ${({theme}) => theme.color.white};
   box-shadow: 0px 16px 58px rgba(8.71, 10.40, 51, 0.03);
-  max-width: 1216px;
   margin: 63px auto 72px;
   padding: 32px;
   border-radius: 4px;

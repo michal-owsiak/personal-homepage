@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "./Button/Message.svg";
 
 export const StyledHeader = styled.header`
-  max-width: 1216px;
   margin: 115px auto 0;
   display: grid;
   grid-template-columns: auto 1fr;
