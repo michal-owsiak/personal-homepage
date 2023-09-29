@@ -1,7 +1,7 @@
 export const name = "Michał Owsiak";
 
 export const bio =
-  "Hi there! I'm a Frontend Developer with React as my core environment. Have a peek at what my skills are, and how I implement them in my projects. Currently, I'm looking for job opportunities.";
+  "Frontend Developer with proficiency in React. Skilled in JavaScript, CSS, and modern web technologies. Explore my portfolio to see how I implement these skills in real projects. Currently seeking new job opportunities in the frontend development field. Feel free to reach out!";
 
 export const skillsetList = [
   "Semantic & accessible HTML",
@@ -44,4 +44,4 @@ export const errorText = "Sorry, failed to load Github projects. \nYou can check
 export const mail = "micowsiak@gmail.com";
 
 export const footerCaption =
-  "I’m open to new projects - if you have a website, dashboard, or mobile app in mind and need some help to make your ideas come to life, feel free to contact me!";
+  "I’m always open to new projects. If you have a website, dashboard, or mobile app in mind and need some help to make your ideas come to life, feel free to contact me!";
