@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { StyledProjects } from "./styled";
 import ProjectTile from "./ProjectTile";
 import Loading from "./Loading";
+import Error from "./Error";
 import { sortProjects } from "./sortProjects";
 
 const Projects = () => {
@@ -31,7 +32,7 @@ const Projects = () => {
   }
 
   if (error) {
-    return <div>Error loading projects</div>;
+    return <Error />;
   }
 
   return (

@@ -1,4 +1,5 @@
-import spinner from "./icon-spinner.svg";
+import spinner from "./loading_icon.svg";
+import { loadingText } from "../../../../copy";
 import {
   Caption,
   LoadingImage,
@@ -6,9 +7,7 @@ import {
 
 const Loading = () => (
   <>
-    <Caption>
-      Please wait, projects are being loaded...
-    </Caption>
+    <Caption>{loadingText}</Caption>
     <LoadingImage
       src={spinner}
       alt={"Loading..."}
