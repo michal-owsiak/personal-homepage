@@ -1,7 +1,7 @@
 export const name = "Michał Owsiak";
 
 export const bio =
-  "Hi there! I'm a Frontend Developer with React as my core environment. Have a peek at what my skills are, and how I implement them in my projects. Currently I'm looking for job opportunities.";
+  "Hi there! I'm a Frontend Developer with React as my core environment. Have a peek at what my skills are, and how I implement them in my projects. Currently, I'm looking for job opportunities.";
 
 export const skillsetList = [
   "Semantic & accessible HTML",
