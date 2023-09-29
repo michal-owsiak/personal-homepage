@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const StyledList = styled.ul`
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px 115px;
+  column-count: 3;
+  column-gap: 16px;
 `;
 
 export const ListItem = styled.li`
+  padding: 4px;
+  display: block;
   &:before {
     background: ${({ theme }) => theme.color.scienceBlue};
     content: "";
