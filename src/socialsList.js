@@ -1,6 +1,6 @@
-import { ReactComponent as GitHubLogo } from "./images/github_black.svg";
-import { ReactComponent as FacebookLogo } from "./images/facebook_black.svg";
-import { StyledLogo } from "./styled";
+import { ReactComponent as GitHubLogo } from "./features/Footer/Socials/images/github_black.svg";
+import { ReactComponent as FacebookLogo } from "./features/Footer/Socials/images/facebook_black.svg";
+import { StyledLogo } from "./features/Footer/Socials/styled";
 
 export const socials = [
   {

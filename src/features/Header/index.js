@@ -1,5 +1,5 @@
 import Picture from "./Picture";
-import Button from "./Button"
+import Button from "../../common/Button";
 import {
   StyledHeader,
   ThisIs,
