@@ -3,7 +3,7 @@ import { StyledProjects } from "./styled";
 import ProjectTile from "./ProjectTile";
 import Loading from "./Loading";
 import Error from "./Error";
-import { sortProjects } from "./sortProjects";
+import { sortAndFilterProjects } from "./sortAndFilterProjects";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -14,7 +14,7 @@ const Projects = () => {
     const fetchData = async () => {
       setTimeout(async () => {
         try {
-          const response = await sortProjects();
+          const response = await sortAndFilterProjects();
           setProjects(response);
           setLoading(false);
         } catch (err) {
