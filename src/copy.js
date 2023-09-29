@@ -39,7 +39,7 @@ export const loadingText = "Please wait, projects are being loaded...";
 
 export const errorHeader = "Ooops! Something went wrong... ";
 
-export const errorText = "Sorry, failed to load Github projects. \nYou can check them directly on Github."
+export const errorText = "Sorry, failed to load Github projects. You can check them directly on Github."
 
 export const mail = "micowsiak@gmail.com";
 

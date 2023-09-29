@@ -21,7 +21,7 @@ export const ErrorText = styled.p`
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 32px auto;
-  max-width: 427px;
+  max-width: 420px;
 `;
 
 export const Wrapper = styled.div`
