@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as MessageIcon } from "./Button/Message.svg";
+import { ReactComponent as MessageIcon } from "../../common/Button/Message.svg";
 
 export const StyledHeader = styled.header`
   margin: 115px auto 0;
