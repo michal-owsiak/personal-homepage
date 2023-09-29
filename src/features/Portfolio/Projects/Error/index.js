@@ -1,5 +1,5 @@
 import { errorHeader, errorText } from "../../../../copy";
-import warning from "./error_icon.svg"
+import warning from "../../../../images/error_icon.svg"
 import Button from "../../../../common/Button";
 import { socials } from "../../../../socialsList";
 import {

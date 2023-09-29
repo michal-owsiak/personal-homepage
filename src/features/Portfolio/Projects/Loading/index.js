@@ -1,4 +1,4 @@
-import spinner from "./loading_icon.svg";
+import spinner from "../../../../images/loading_icon.svg";
 import { loadingText } from "../../../../copy";
 import {
   Caption,

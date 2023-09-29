@@ -1,5 +1,5 @@
 import { Image } from "./styled";
-import portrait from "./portrait.jpg"
+import portrait from "../../../images/portrait.jpg"
 
 const Photo = () => (
   <Image src={portrait} alt="Portrait" />
