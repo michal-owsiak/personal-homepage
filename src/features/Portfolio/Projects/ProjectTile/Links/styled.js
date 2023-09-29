@@ -19,5 +19,12 @@ export const Link = styled.a`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
-  text-decoration: underline 1px solid ${({ theme }) => theme.color.tropicalBlue} ;
+  text-decoration: underline 1px solid ${({ theme }) => theme.color.tropicalBlue};
+  transition: 0.2s;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.dodgerBlue};
+    opacity: 0.8;
+    text-decoration: underline 1px solid ${({ theme }) => theme.color.dodgerBlue};
+  }
 `;
