@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchProjects } from "./Projects/fetchProjects";
+import { sortProjects } from "./Projects/sortProjects";
 import github from "./github.svg"
 import Projects from "./Projects";
 import {
@@ -17,9 +17,9 @@ const Portfolio = () => {
     setProjects("loading");
 
     const timeoutId = setTimeout(() => {
-      fetchProjects()
-        .then((projects) => {
-          setProjects(projects);
+      sortProjects()
+        .then((sortedProjects) => {
+          setProjects(sortedProjects);
         })
         .catch(() => {
           setProjects("error");
