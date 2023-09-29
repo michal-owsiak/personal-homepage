@@ -12,4 +12,17 @@ export const StyledButton = styled.button`
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    box-shadow: 
+      -2px -2px 0px 0px #8CC2FF, 
+      2px 2px 0px 0px #8CC2FF, 
+      -2px 2px 0px 0px #8CC2FF, 
+      2px -2px 0px 0px #8CC2FF;
+  }
+
+  &:active {
+    box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset;
+  } 
 `

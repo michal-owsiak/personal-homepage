@@ -24,6 +24,11 @@ export const MailText = styled.p`
   font-weight: 900;
   letter-spacing: 1.6px;
   margin: 0 0 24px;
+  transition: 0.4s;
+
+  &:hover{
+    color: ${({ theme }) => theme.color.scienceBlue};
+  }
 `;
 
 export const Caption = styled.p`
