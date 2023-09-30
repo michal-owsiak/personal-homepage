@@ -9,22 +9,23 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  let fetchDataTimeout;
 
   useEffect(() => {
     const fetchData = async () => {
-      setTimeout(async () => {
-        try {
-          const response = await sortAndFilterProjects();
-          setProjects(response);
-          setLoading(false);
-        } catch (error) {
-          setError(error); 
-          setLoading(false);
-        }
-      }, 1000);
+      try {
+        const response = await sortAndFilterProjects();
+        setProjects(response);
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
     };
 
-    fetchData();
+    fetchDataTimeout = setTimeout(fetchData, 1000);
+
+    return () => clearTimeout(fetchDataTimeout);
   }, []);
 
   if (loading) {
