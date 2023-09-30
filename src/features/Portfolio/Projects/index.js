@@ -9,7 +9,6 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  let fetchDataTimeout;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +22,7 @@ const Projects = () => {
       }
     };
 
-    fetchDataTimeout = setTimeout(fetchData, 1000);
+    const fetchDataTimeout = setTimeout(fetchData, 1000);
 
     return () => clearTimeout(fetchDataTimeout);
   }, []);
