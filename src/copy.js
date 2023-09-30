@@ -4,16 +4,16 @@ export const bio =
   "Frontend Developer with proficiency in React. Skilled in JavaScript, CSS, and modern web technologies. Explore my portfolio to see how I implement these skills in real projects. Currently seeking new job opportunities in the frontend development field. Feel free to reach out!";
 
 export const skillsetList = [
-  "Semantic & accessible HTML",
+  "Semantic & Accessible HTML",
   "CSS (Flex, Grid, BEM)",
   "Styled-Components",
   "JavaScript (ES6+)",
   "JSX",
   "React",
   "React Hooks",
-  "Error handling",
-  "Promises, async/await",
-  "Working with API (fetch/Axios)",
+  "Error Handling",
+  "Promises, Async/Await",
+  "Working with API (Fetch/Axios)",
   "Immutability",
   "React Router",
   "Redux",
@@ -28,7 +28,7 @@ export const toLearnList = [
   "SAAS & SCSS",
   "TypeScript",
   "React Context",
-  "Unit testing",
+  "Unit Testing",
   "Cypress",
   "Node",
 ];

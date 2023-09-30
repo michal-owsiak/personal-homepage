@@ -17,8 +17,8 @@ const Projects = () => {
           const response = await sortAndFilterProjects();
           setProjects(response);
           setLoading(false);
-        } catch (err) {
-          setError(err);
+        } catch (error) {
+          setError(error); 
           setLoading(false);
         }
       }, 1000);
@@ -39,7 +39,7 @@ const Projects = () => {
     <StyledProjects>
       {projects.map((project) => (
         <ProjectTile
-          key={project.name}
+          key={project.id}
           name={project.name}
           description={project.description}
           demo={project.homepage}
