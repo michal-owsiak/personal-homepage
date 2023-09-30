@@ -6,7 +6,7 @@ export const bio =
 export const skillsetList = [
   "Semantic & Accessible HTML",
   "CSS (Flex, Grid, BEM)",
-  "Styled-Components",
+  "Styled Components",
   "JavaScript (ES6+)",
   "JSX",
   "React",
