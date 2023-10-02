@@ -19,7 +19,7 @@ export const sortAndFilterProjects = async () => {
 
     return filteredReposArray;
   } catch (error) {
-    console.error(error);
+    console.error("No access to API database");
     throw error;
   }
 };
