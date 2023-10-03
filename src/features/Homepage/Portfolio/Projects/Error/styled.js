@@ -1,13 +1,19 @@
 import styled from "styled-components";
+import { ReactComponent as WarningIcon } from "../../../../../images/error_icon.svg"
 
-export const ErrorImage = styled.img`
+export const ErrorImage = styled(WarningIcon)`
   display: flex;
   margin: 64px auto 0;
   width: 48px;
-  height: 48px
+  height: 48px;
+
+  path {
+    stroke: ${({ theme }) => theme.color.textAndLogos.mainText};
+  }
 `;
 
 export const ErrorHeader = styled.h1`
+  color: ${({ theme }) => theme.color.textAndLogos.mainText};
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -15,6 +21,7 @@ export const ErrorHeader = styled.h1`
 `;
 
 export const ErrorText = styled.p`
+  color: ${({ theme }) => theme.color.textAndLogos.secondaryText};
   text-align: center;
   font-size: 20px;
   font-weight: 400;

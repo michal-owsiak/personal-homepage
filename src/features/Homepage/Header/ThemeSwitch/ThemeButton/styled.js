@@ -10,16 +10,27 @@ export const StyledButton = styled.button`
 `;
 
 export const SunIcon = styled(Sun)`
+  path {
+    fill: ${({ theme }) => theme.color.themeSwitch.icon}
+  }
 `;
 
 export const Frame = styled(SwitchIcon)`
+  path {
+    fill: ${({ theme }) => theme.color.themeSwitch.background};
+    stroke: ${({ theme }) => theme.color.themeSwitch.border}
+  }
 `;
 
 export const IconWrapper = styled.div`
-  background: ${({ theme }) => theme.color.slateGray};
+  background: ${({ theme }) => theme.color.textAndLogos.secondaryText};
   border-radius: 50%;
   padding: 3px;
   margin: 3px;
   display: flex;
   position: absolute;
+  transition: transform 0.3s;
+  ${({ dark }) => dark &&`
+    transform: translateX(22px);
+  `};
 `;

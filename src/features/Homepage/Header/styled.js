@@ -8,7 +8,7 @@ export const Wrapper = styled.header`
 `;
 
 export const ThisIs = styled.h2`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.textAndLogos.secondaryText};
   font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
@@ -16,7 +16,7 @@ export const ThisIs = styled.h2`
 `;
 
 export const Name = styled.h1`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.color.textAndLogos.mainText};
   font-size: 38px;
   font-weight: 900;
   letter-spacing: 1.9px;
@@ -24,7 +24,7 @@ export const Name = styled.h1`
 `;
 
 export const Bio = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.textAndLogos.secondaryText};
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;

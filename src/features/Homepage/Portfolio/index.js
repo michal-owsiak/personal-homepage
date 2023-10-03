@@ -1,4 +1,3 @@
-import github from "../../../images/github.svg"
 import Projects from "./Projects";
 import {
   StyledPortfolio,
@@ -11,7 +10,7 @@ import {
 const Portfolio = () => (
   <StyledPortfolio>
     <Wrapper>
-      <GitHubIcon src={github} />
+      <GitHubIcon />
       <Header>Portfolio</Header>
       <Subheader>My recent projects</Subheader>
     </Wrapper>

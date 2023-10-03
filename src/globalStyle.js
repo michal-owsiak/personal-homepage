@@ -12,7 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     max-width: 1216px;
     margin: 115px auto 109px;
+    padding: 0 14px;
     font-family: 'Inter', sans-serif;
-    background: ${({ theme }) => theme.color.whiteLilac};
+    background: ${({ theme }) => theme.color.background.mainBackground};
   }
 `;

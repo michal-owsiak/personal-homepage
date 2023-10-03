@@ -1,4 +1,3 @@
-import spinner from "../../../../../images/loading_icon.svg";
 import { loadingText } from "../../../../../common/copy";
 import {
   Caption,
@@ -8,10 +7,7 @@ import {
 const Loading = () => (
   <>
     <Caption>{loadingText}</Caption>
-    <LoadingImage
-      src={spinner}
-      alt={"Loading..."}
-    />
+    <LoadingImage />
   </>
 );
 

@@ -4,7 +4,7 @@ export const bio =
   "Frontend Developer with proficiency in React. Skilled in JavaScript, CSS, and modern web technologies. Explore my portfolio to see how I implement these skills in real projects. Currently seeking new job opportunities in the frontend development field. Feel free to reach out!";
 
 export const skillsetList = [
-  "Semantic & Accessible HTML",
+  "HTML",
   "CSS (Flex, Grid, BEM)",
   "Styled Components",
   "JavaScript (ES6+)",

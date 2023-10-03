@@ -1,5 +1,4 @@
 import { errorHeader, errorText } from "../../../../../common/copy";
-import warning from "../../../../../images/error_icon.svg"
 import Button from "../../../../../common/Button";
 import { socials } from "../../../Footer/socialsList";
 import {
@@ -15,9 +14,7 @@ const Error = () => {
 
   return (
     <>
-      <ErrorImage
-        src={warning}
-      />
+      <ErrorImage />
       <ErrorHeader>{errorHeader}</ErrorHeader>
       <ErrorText>{errorText}</ErrorText>
       <Wrapper>

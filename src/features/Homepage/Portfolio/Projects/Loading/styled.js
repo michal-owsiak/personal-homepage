@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { ReactComponent as Spinner } from "../../../../../images/loading_icon.svg";
 
 export const Caption = styled.p`
+  color: ${({ theme }) => theme.color.textAndLogos.mainText};
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -9,7 +11,8 @@ export const Caption = styled.p`
   margin: 64px auto 48px;
 `;
 
-export const LoadingImage = styled.img`
+export const LoadingImage = styled(Spinner)`
+  stroke: ${({ theme }) => theme.color.blueElements.mainBlue};
   display: flex;
   margin: 0 auto 20px;
   width: 160px;

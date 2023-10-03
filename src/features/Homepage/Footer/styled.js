@@ -5,7 +5,7 @@ export const StyledFooter = styled.div`
 `;
 
 export const LetsTalk = styled.h2`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.textAndLogos.secondaryText};
   font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
@@ -18,7 +18,7 @@ export const MailLink = styled.a`
 `;
 
 export const MailText = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.color.textAndLogos.mainText};
   font-size: 32px;
   font-weight: 900;
   letter-spacing: 1.6px;
@@ -26,12 +26,12 @@ export const MailText = styled.p`
   transition: 0.4s;
 
   &:hover{
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.blueElements.mainBlue};
   }
 `;
 
 export const Caption = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.color.textAndLogos.mainText};
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;

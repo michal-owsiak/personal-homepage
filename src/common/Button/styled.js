@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
   display: flex;
   gap: 16px;
-  border: 1px;
+  border: 1px solid ${({ theme }) => theme.color.borders.buttonBorder};
   border-radius: 4px;
   padding: 12px 16px;
-  color: ${({ theme }) => theme.color.white};
-  background: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.color.textAndLogos.buttonText};
+  background: ${({ theme }) => theme.color.blueElements.mainBlue};
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -15,14 +15,10 @@ export const StyledButton = styled.button`
   transition: 0.4s;
 
   &:hover {
-    box-shadow: 
-      -2px -2px 0px 0px #8CC2FF, 
-      2px 2px 0px 0px #8CC2FF, 
-      -2px 2px 0px 0px #8CC2FF, 
-      2px -2px 0px 0px #8CC2FF;
+    box-shadow: ${({ theme }) => theme.shadow.buttonHover};
   }
 
   &:active {
-    box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset;
+    box-shadow: ${({ theme }) => theme.shadow.buttonSelected};
   } 
 `
