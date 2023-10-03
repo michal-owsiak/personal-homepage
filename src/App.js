@@ -1,14 +1,14 @@
-import Header from "./features/Header";
+import Header from "./features/Homepage/Header";
 import Section from "./common/Section";
 import List from "./common/List";
-import Portfolio from "./features/Portfolio";
-import Footer from "./features/Footer";
+import Portfolio from "./features/Homepage/Portfolio";
+import Footer from "./features/Homepage/Footer";
 import {
   skillsetList,
   toLearnList,
   mail,
   footerCaption,
-} from "./copy";
+} from "./common/copy";
 
 function App() {
   return (

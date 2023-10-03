@@ -1,5 +1,5 @@
-import spinner from "../../../../images/loading_icon.svg";
-import { loadingText } from "../../../../copy";
+import spinner from "../../../../../images/loading_icon.svg";
+import { loadingText } from "../../../../../common/copy";
 import {
   Caption,
   LoadingImage,

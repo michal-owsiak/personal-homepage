@@ -1,5 +1,5 @@
 import Picture from "./Picture";
-import Button from "../../common/Button";
+import Button from "../../../common/Button";
 import {
   StyledHeader,
   ThisIs,
@@ -8,7 +8,7 @@ import {
   Message,
   MailLink,
 } from "./styled";
-import { name, bio, mail } from "../../copy";
+import { name, bio, mail } from "../../../common/copy";
 
 const Header = () => (
   <StyledHeader>
