@@ -1,7 +1,7 @@
 import { errorHeader, errorText } from "../../../../../common/copy";
 import warning from "../../../../../images/error_icon.svg"
 import Button from "../../../../../common/Button";
-import { socials } from "../../../../../common/socialsList";
+import { socials } from "../../../Footer/socialsList";
 import {
   ErrorImage,
   ErrorHeader,

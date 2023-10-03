@@ -1,7 +1,7 @@
 import Picture from "./Picture";
 import Button from "../../../common/Button";
 import {
-  StyledHeader,
+  Wrapper,
   ThisIs,
   Name,
   Bio,
@@ -9,11 +9,13 @@ import {
   MailLink,
 } from "./styled";
 import { name, bio, mail } from "../../../common/copy";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => (
-  <StyledHeader>
+  <Wrapper>
     <Picture />
     <div>
+      <ThemeSwitch />
       <ThisIs>This is</ThisIs>
       <Name>{name}</Name>
       <Bio>{bio}</Bio>
@@ -21,7 +23,7 @@ const Header = () => (
         <Button icon={<Message />} caption="Hire Me" />
       </MailLink>
     </div>
-  </StyledHeader>
+  </Wrapper>
 );
 
-export default Header
+export default Header;

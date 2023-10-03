@@ -9,6 +9,7 @@ import {
   mail,
   footerCaption,
 } from "./common/copy";
+import ThemeSwitch from "./features/Homepage/Header/ThemeSwitch";
 
 function App() {
   return (

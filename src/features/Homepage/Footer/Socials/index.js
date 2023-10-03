@@ -1,4 +1,4 @@
-import { socials } from "../../../../common/socialsList";
+import { socials } from "../socialsList";
 import { Wrapper } from "./styled";
 
 const Socials = () => (

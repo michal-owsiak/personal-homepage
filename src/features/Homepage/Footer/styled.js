@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.div`
   max-width: 670px;
-  margin: 0 0 109px;
 `;
 
 export const LetsTalk = styled.h2`

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "../../../images/message.svg";
 
-export const StyledHeader = styled.header`
-  margin: 115px auto 0;
+export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
