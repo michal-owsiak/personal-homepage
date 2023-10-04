@@ -1,8 +1,5 @@
 import { loadingText } from "../../../../../copy";
-import {
-  Caption,
-  LoadingImage,
-} from "./styled";
+import { Caption, LoadingImage } from "./styled";
 
 const Loading = () => (
   <>

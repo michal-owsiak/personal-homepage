@@ -17,7 +17,6 @@ export const useSortedAndFilteredProjects = () => {
         setLoading(false);
       }
     };
-
     const fetchDataTimeout = setTimeout(fetchData, 1000);
 
     return () => clearTimeout(fetchDataTimeout);

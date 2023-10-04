@@ -1,8 +1,4 @@
-import {
-  Wrapper,
-  Title,
-  Link,
-} from "./styled";
+import { Wrapper, Title, Link } from "./styled";
 
 const Links = ({ demoLink, codeLink }) => (
   <>
