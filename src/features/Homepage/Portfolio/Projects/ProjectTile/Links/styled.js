@@ -23,7 +23,6 @@ export const Link = styled.a`
   transition: 0.2s;
 
   &:hover {
-    text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderlineHover};
-    opacity: 0.9;
+    opacity: 0.8;
   }
 `;

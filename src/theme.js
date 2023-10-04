@@ -12,10 +12,8 @@ const colors = {
   cornflowerBlue: "#4296F8",
   haveflockBlue: "#4187D7",
   tropicalBlue: "#CDE0F7",
-  curiousBlue: "#3080D9",
   dodgerBlue: "#2188FF",
   azure: "#35669E",
-  malibu: "#489bfa",
   scienceBlue: "#0366D6",
 };
 
@@ -29,7 +27,6 @@ export const lightTheme = {
     sectionBackground: colors.white,
     mainBlue: colors.scienceBlue,
     linkUnderline: colors.tropicalBlue,
-    linkUnderlineHover: colors.curiousBlue,
     sectionBorder: colors.athensGray,
     hoverBorder: colors.tropicalBlue,
     buttonBorder: colors.haveflockBlue,
@@ -56,7 +53,6 @@ export const darkTheme = {
     sectionBackground: colors.heavyMetal,
     mainBlue: colors.dodgerBlue,
     linkUnderline: colors.stTropez,
-    linkUnderlineHover: colors.malibu,
     sectionBorder: colors.shipGray,
     hoverBorder: colors.azure,
     buttonBorder: colors.cornflowerBlue,
