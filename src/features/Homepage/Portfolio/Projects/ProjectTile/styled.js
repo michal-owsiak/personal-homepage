@@ -24,9 +24,9 @@ export const Name = styled.h1`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin: 0;
     font-size: 16px;
   }
 `;
