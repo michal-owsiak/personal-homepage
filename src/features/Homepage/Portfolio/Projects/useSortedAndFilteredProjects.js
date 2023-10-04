@@ -22,5 +22,5 @@ export const useSortedAndFilteredProjects = () => {
     return () => clearTimeout(fetchDataTimeout);
   }, []);
 
-  return { projects, loading, error};
+  return { projects, loading, error };
 };
