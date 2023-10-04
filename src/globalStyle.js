@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 21px auto 31px;
-  }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) and 
+      (max-width: ${({ theme }) => theme.breakpoints.smallScreen}) {
+        margin: 64px auto 72px;
+      }
   }
 `;
+

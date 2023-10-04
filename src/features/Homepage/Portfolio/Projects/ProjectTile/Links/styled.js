@@ -29,6 +29,7 @@ export const Link = styled.a`
   letter-spacing: 0.9px;
   text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderline};
   transition: 0.2s;
+  word-break: break-word;
 
   &:hover {
     opacity: 0.8;

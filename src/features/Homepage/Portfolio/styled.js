@@ -43,7 +43,7 @@ export const Subheader = styled.h2`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
-  margin: 0 auto 24px;
+  margin: 0 0 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 17px;

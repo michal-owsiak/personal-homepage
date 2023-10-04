@@ -6,7 +6,7 @@ export const StyledProjects = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallScreen}) {
     display: flex;
     flex-direction: column;
   }

@@ -3,18 +3,22 @@ import styled from "styled-components";
 export const StyledList = styled.ul`
   list-style: none;
   column-count: 3;
-  column-gap: 16px;
+  padding: 0;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding: 0;
     column-count: 1;
-    margin: 0;
   }
+  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) and 
+    (max-width: ${({ theme }) => theme.breakpoints.smallScreen}) {
+      column-count: 2;
+    }
 `;
 
 export const ListItem = styled.li`
   padding: 4px;
   display: block;
+  line-height: 1.4;
   &:before {
     background: ${({ theme }) => theme.color.mainBlue};
     content: "";

@@ -43,7 +43,8 @@ export const lightTheme = {
   },
   breakpoints: {
     mobile: "767px",
-  }
+    smallScreen: "1126px",
+  },
 };
 
 export const darkTheme = {
@@ -71,6 +72,7 @@ export const darkTheme = {
       "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
   },
   breakpoints: {
-    mobile: "767px",
-  }
+    mobile: "867px",
+    smallScreen: "1126px",
+  },
 };
