@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { StyledThemeCaption } from "./styled";
-import { selectIsThemeDark } from "../../../../themeSlice";
+import { selectIsThemeDark } from "../../../../themes/themeSlice";
 
 const ThemeCaption = () => {
   const darkTheme = useSelector(selectIsThemeDark);

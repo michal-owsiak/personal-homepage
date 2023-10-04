@@ -1,4 +1,4 @@
-import { errorHeader, errorText } from "../../../../../copy";
+import { errorHeader, errorText } from "../../../../../common/copy";
 import Button from "../../../../../common/Button";
 import { socials } from "../../../Footer/socialsList";
 import {

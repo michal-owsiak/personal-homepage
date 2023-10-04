@@ -1,5 +1,5 @@
 import { Frame, IconWrapper, SunIcon, StyledButton } from "./styled";
-import { selectIsThemeDark, switchDarkTheme, switchLightTheme } from "../../../../themeSlice";
+import { selectIsThemeDark, switchDarkTheme, switchLightTheme } from "../../../../themes/themeSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const ThemeButton = () => {
