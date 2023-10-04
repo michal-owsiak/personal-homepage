@@ -4,7 +4,7 @@
 
 My personal homepage serving as an online portfolio. You can [**check out**](https://michal-owsiak.github.io/personal-homepage) what my programming skills are, and browse through the projects that are fetched from my GitHub profile API.
 
-![screenshot](https://github.com/michal-owsiak/personal-homepage/blob/main/src/images/screenshot.jpg?raw=true)
+![screenshot](https://github.com/michal-owsiak/personal-homepage/blob/main/src/images/demo.gif?raw=true)
 
 ## Tools Used
 
