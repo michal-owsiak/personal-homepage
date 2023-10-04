@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as Sun } from "../../../../../images/sun_icon.svg";
-import { ReactComponent as SwitchIcon } from "../../../../../images/bg.svg";
+import { ReactComponent as Sun } from "../../../../images/sun_icon.svg";
+import { ReactComponent as SwitchIcon } from "../../../../images/bg.svg";
 
 export const StyledButton = styled.button`
   background: none;

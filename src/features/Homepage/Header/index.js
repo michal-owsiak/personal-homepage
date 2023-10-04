@@ -9,7 +9,7 @@ import {
   MailLink,
 } from "./styled";
 import { name, bio, mail } from "../../../copy";
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "../ThemeSwitch";
 
 const Header = () => (
   <Wrapper>
