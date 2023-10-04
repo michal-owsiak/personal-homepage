@@ -41,6 +41,9 @@ export const lightTheme = {
     buttonSelected:
       "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
   },
+  breakpoints: {
+    mobile: "767px",
+  }
 };
 
 export const darkTheme = {
@@ -67,4 +70,7 @@ export const darkTheme = {
     buttonSelected:
       "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
   },
+  breakpoints: {
+    mobile: "767px",
+  }
 };

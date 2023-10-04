@@ -3,6 +3,10 @@ import { ReactComponent as Icon } from "../../../images/github.svg";
 
 export const StyledPortfolio = styled.div`
   margin: 0 auto 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 0 auto 48px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -14,8 +18,11 @@ export const Wrapper = styled.div`
 
 export const GitHubIcon = styled(Icon)`
   fill: ${({ theme }) => theme.color.mainBlue};
-  width: 40px;
-  height: 40px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const Header = styled.h1`
@@ -24,6 +31,10 @@ export const Header = styled.h1`
   font-weight: 900;
   letter-spacing: 1.5px;
   margin: 12px auto 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+  }
 `;
 
 export const Subheader = styled.h2`
@@ -33,4 +44,8 @@ export const Subheader = styled.h2`
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 0 auto 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 17px;
+  }
 `;

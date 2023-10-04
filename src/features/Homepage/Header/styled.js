@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "../../../images/message.svg";
 
-export const Wrapper = styled.header`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 66px;
+  gap: 66px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 `;
 
 export const ThisIs = styled.h2`
@@ -13,6 +19,10 @@ export const ThisIs = styled.h2`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 0 auto 8px; 
+  }
 `;
 
 export const Name = styled.h1`
@@ -21,6 +31,11 @@ export const Name = styled.h1`
   font-weight: 900;
   letter-spacing: 1.9px;
   margin: 12px auto 35px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 22px;
+    margin: 0 auto 12px;
+  }
 `;
 
 export const Bio = styled.p`
@@ -31,6 +46,11 @@ export const Bio = styled.p`
   letter-spacing: 1px;
   margin: 0 auto 32px;
   word-wrap: break-word;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 17px;
+    margin: 0 auto 24px;
+  }
 `;
 
 export const Message = styled(MessageIcon)`

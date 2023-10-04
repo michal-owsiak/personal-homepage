@@ -12,18 +12,20 @@ import { name, bio, mail } from "../../../copy";
 import ThemeSwitch from "../ThemeSwitch";
 
 const Header = () => (
-  <Wrapper>
-    <Picture />
-    <div>
-      <ThemeSwitch />
-      <ThisIs>This is</ThisIs>
-      <Name>{name}</Name>
-      <Bio>{bio}</Bio>
-      <MailLink href={`mailto:${mail}`}>
-        <Button icon={<Message />} caption="Hire Me" />
-      </MailLink>
-    </div>
-  </Wrapper>
+  <>
+    <ThemeSwitch />
+    <Wrapper>
+      <div><Picture /></div>
+      <div>
+        <ThisIs>This is</ThisIs>
+        <Name>{name}</Name>
+        <Bio>{bio}</Bio>
+        <MailLink href={`mailto:${mail}`}>
+          <Button icon={<Message />} caption="Hire Me" />
+        </MailLink>
+      </div>
+    </Wrapper>
+  </>
 );
 
 export default Header;

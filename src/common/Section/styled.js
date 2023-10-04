@@ -6,6 +6,11 @@ export const StyledSection = styled.div`
   margin: 63px auto 72px;
   padding: 32px;
   border-radius: 4px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 16px;
+    margin: 48px auto 50px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -17,6 +22,12 @@ export const Title = styled.h1`
   padding-bottom: 15px;
   border-bottom: 1px solid ${({theme}) => theme.color.headerDivider};
   word-wrap: break-word;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin: 0 auto 12px;
+  }
 `;
 
 export const Content = styled.div`
@@ -26,4 +37,10 @@ export const Content = styled.div`
   line-height: 1.4;
   letter-spacing: 0.9px;
   word-wrap: break-word;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: normal;
+  }
 `;

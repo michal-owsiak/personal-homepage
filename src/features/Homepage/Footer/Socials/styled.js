@@ -14,4 +14,9 @@ export const StyledLogo = (Logo) => styled(Logo)`
   &:hover {
     fill: ${({ theme }) => theme.color.mainBlue};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;

@@ -10,7 +10,11 @@ export const LetsTalk = styled.h2`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 0 auto 12px;
+  }
 `;
 
 export const MailLink = styled.a`
@@ -22,11 +26,16 @@ export const MailText = styled.p`
   font-size: 32px;
   font-weight: 900;
   letter-spacing: 1.6px;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
   transition: 0.4s;
 
   &:hover{
     color: ${({ theme }) => theme.color.mainBlue};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+    margin: 0 auto 12px;
   }
 `;
 
@@ -37,4 +46,9 @@ export const Caption = styled.p`
   line-height: 1.4;
   letter-spacing: 0.9px;
   margin-bottom: 56px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 `;

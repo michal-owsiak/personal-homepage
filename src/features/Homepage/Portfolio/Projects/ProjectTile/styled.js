@@ -13,6 +13,10 @@ export const StyledProjectTile = styled.div`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.hoverBorder};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 24px;
+  }
 `;
 
 export const Name = styled.h1`
@@ -20,6 +24,11 @@ export const Name = styled.h1`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 0;
+    font-size: 16px;
+  }
 `;
 
 export const Description = styled.p`
@@ -29,4 +38,10 @@ export const Description = styled.p`
   line-height: 1.4;
   letter-spacing: 0.9px;
   margin: 24px auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    line-height: normal;
+    margin: 16px 0;
+    font-size: 14px;
+  }
 `;
