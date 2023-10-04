@@ -17,6 +17,11 @@ const colors = {
   scienceBlue: "#0366D6",
 };
 
+const breakpoints = {
+  mobile: "867px",
+  smallScreen: "1126px",
+};
+
 export const lightTheme = {
   color: {
     mainText: colors.mineShaft,
@@ -42,8 +47,8 @@ export const lightTheme = {
       "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
   },
   breakpoints: {
-    mobile: "767px",
-    smallScreen: "1126px",
+    mobile: breakpoints.mobile,
+    smallScreen: breakpoints.smallScreen,
   },
 };
 
@@ -72,7 +77,7 @@ export const darkTheme = {
       "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
   },
   breakpoints: {
-    mobile: "867px",
-    smallScreen: "1126px",
+    mobile: breakpoints.mobile,
+    smallScreen: breakpoints.smallScreen,
   },
 };
