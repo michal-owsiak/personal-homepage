@@ -9,6 +9,10 @@ export const Caption = styled.p`
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 64px auto 48px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 14px;
+  }
 `;
 
 export const LoadingImage = styled(Spinner)`
@@ -17,11 +21,15 @@ export const LoadingImage = styled(Spinner)`
   margin: 0 auto 20px;
   width: 160px;
   height: 160px;
+  animation: spin 4s infinite linear;
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
 
-  animation: spin 4s infinite linear;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 120px;
+    height: 120px;
+  }
 `;

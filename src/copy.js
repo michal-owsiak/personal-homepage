@@ -33,7 +33,7 @@ export const toLearnList = [
   "Node",
 ];
 
-export const GitHubAPI = "https://api.github.com/users/michal-owsiak/repos";
+export const GitHubAPI = "https://api.githdub.com/users/michal-owsiak/repos";
 
 export const loadingText = "Please wait, projects are being loaded...";
 

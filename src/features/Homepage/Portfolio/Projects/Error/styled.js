@@ -18,6 +18,10 @@ export const ErrorHeader = styled.h1`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+  }
 `;
 
 export const ErrorText = styled.p`
@@ -29,6 +33,10 @@ export const ErrorText = styled.p`
   letter-spacing: 1px;
   margin: 32px auto;
   max-width: 420px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 16px;
+  }
 `;
 
 export const Wrapper = styled.div`
