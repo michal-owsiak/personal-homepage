@@ -14,7 +14,7 @@ const ThemeButton = () => {
   return (
     <StyledButton onClick={toggleTheme}>
       <Frame />
-      <IconWrapper dark={darkTheme}>
+      <IconWrapper data-dark={darkTheme}>
         <SunIcon />
       </IconWrapper>
     </StyledButton>

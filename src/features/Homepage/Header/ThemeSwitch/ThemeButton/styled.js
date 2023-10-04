@@ -11,26 +11,27 @@ export const StyledButton = styled.button`
 
 export const SunIcon = styled(Sun)`
   path {
-    fill: ${({ theme }) => theme.color.themeSwitch.icon}
+    fill: ${({ theme }) => theme.color.switchIcon}
   }
 `;
 
 export const Frame = styled(SwitchIcon)`
   path {
-    fill: ${({ theme }) => theme.color.themeSwitch.background};
-    stroke: ${({ theme }) => theme.color.themeSwitch.border}
+    fill: ${({ theme }) => theme.color.switchBackground};
+    stroke: ${({ theme }) => theme.color.switchBorder}
   }
 `;
 
 export const IconWrapper = styled.div`
-  background: ${({ theme }) => theme.color.textAndLogos.secondaryText};
+  background: ${({ theme }) => theme.color.secondaryText};
   border-radius: 50%;
   padding: 3px;
   margin: 3px;
   display: flex;
   position: absolute;
   transition: transform 0.3s;
-  ${({ dark }) => dark &&`
+  
+  &[data-dark="true"] {
     transform: translateX(22px);
-  `};
+  }
 `;

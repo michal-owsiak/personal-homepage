@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Spinner } from "../../../../../images/loading_icon.svg";
 
 export const Caption = styled.p`
-  color: ${({ theme }) => theme.color.textAndLogos.mainText};
+  color: ${({ theme }) => theme.color.mainText};
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -12,7 +12,7 @@ export const Caption = styled.p`
 `;
 
 export const LoadingImage = styled(Spinner)`
-  stroke: ${({ theme }) => theme.color.blueElements.mainBlue};
+  stroke: ${({ theme }) => theme.color.mainBlue};
   display: flex;
   margin: 0 auto 20px;
   width: 160px;

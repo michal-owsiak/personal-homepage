@@ -8,12 +8,12 @@ export const ErrorImage = styled(WarningIcon)`
   height: 48px;
 
   path {
-    stroke: ${({ theme }) => theme.color.textAndLogos.mainText};
+    stroke: ${({ theme }) => theme.color.mainText};
   }
 `;
 
 export const ErrorHeader = styled.h1`
-  color: ${({ theme }) => theme.color.textAndLogos.mainText};
+  color: ${({ theme }) => theme.color.mainText};
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -21,7 +21,7 @@ export const ErrorHeader = styled.h1`
 `;
 
 export const ErrorText = styled.p`
-  color: ${({ theme }) => theme.color.textAndLogos.secondaryText};
+  color: ${({ theme }) => theme.color.secondaryText};
   text-align: center;
   font-size: 20px;
   font-weight: 400;

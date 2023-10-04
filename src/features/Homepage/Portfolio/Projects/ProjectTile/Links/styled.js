@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.span`
-  color: ${({ theme }) => theme.color.textAndLogos.mainText};
+  color: ${({ theme }) => theme.color.mainText};
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
@@ -14,12 +14,12 @@ export const Title = styled.span`
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.color.blueElements.mainBlue};
+  color: ${({ theme }) => theme.color.mainBlue};
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
-  text-decoration: underline 1px solid ${({ theme }) => theme.color.blueElements.linkUnderline};
+  text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderline};
   transition: 0.2s;
 
   /* &:hover {

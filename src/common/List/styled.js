@@ -10,7 +10,7 @@ export const ListItem = styled.li`
   padding: 4px;
   display: block;
   &:before {
-    background: ${({ theme }) => theme.color.blueElements.mainBlue};
+    background: ${({ theme }) => theme.color.mainBlue};
     content: "";
     display: inline-block;
     width: 9px;
