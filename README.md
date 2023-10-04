@@ -1,6 +1,23 @@
-# This project is currently under development
+# Personal Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
+
+My personal homepage serving as an online portfolio. You can [**check out**](https://michal-owsiak.github.io/personal-homepage) what my programming skills are, and browse through the projects that are fetched from my GitHub profile API.
+
+## Tools Used
+
+### Languages
+
+- JavaScript (ES6+) with JSX Syntax
+- CSS
+- HTML
+
+### Libraries & Frameworks
+
+- React
+- Redux
+- Redux-Toolkit
+- Styled-Components
 
 ## Available Scripts
 
@@ -13,11 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
