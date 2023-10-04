@@ -22,9 +22,8 @@ export const Link = styled.a`
   text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderline};
   transition: 0.2s;
 
-  /* &:hover {
-    color: ${({ theme }) => theme.color.dodgerBlue};
-    opacity: 0.8;
-    text-decoration: underline 1px solid ${({ theme }) => theme.color.dodgerBlue};
-  } */
+  &:hover {
+    text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderlineHover};
+    opacity: 0.9;
+  }
 `;
