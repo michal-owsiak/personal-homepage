@@ -1,13 +1,13 @@
 import { lightTheme } from "./theme";
 
-export const saveThemeInLocalStorage = (themeState) =>
-  localStorage.setItem("theme", JSON.stringify(themeState));
+export const saveThemeInLocalStorage = (theme) =>
+  localStorage.setItem("theme", JSON.stringify(theme));
 
 export const getThemeFromLocalStorage = () =>
   JSON.parse(localStorage.getItem("theme")) || lightTheme;
 
-export const saveDarkInLocalStorage = (darkState) =>
-  localStorage.setItem("dark", JSON.stringify(darkState));
+export const saveDarkInLocalStorage = (dark) =>
+  localStorage.setItem("dark", JSON.stringify(dark));
 
 export const getDarkFromLocalStorage = () =>
   JSON.parse(localStorage.getItem("dark")) || false;
