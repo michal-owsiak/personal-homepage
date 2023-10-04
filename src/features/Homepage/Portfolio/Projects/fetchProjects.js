@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GitHubAPI } from "../../../../common/copy";
+import { GitHubAPI } from "../../../../copy";
 
 export const fetchProjects = async () => {
   try {

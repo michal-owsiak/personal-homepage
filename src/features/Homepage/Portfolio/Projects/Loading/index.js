@@ -1,4 +1,4 @@
-import { loadingText } from "../../../../../common/copy";
+import { loadingText } from "../../../../../copy";
 import {
   Caption,
   LoadingImage,

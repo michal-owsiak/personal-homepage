@@ -8,7 +8,7 @@ import {
   Message,
   MailLink,
 } from "./styled";
-import { name, bio, mail } from "../../../common/copy";
+import { name, bio, mail } from "../../../copy";
 import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => (

@@ -8,7 +8,7 @@ import {
   toLearnList,
   mail,
   footerCaption,
-} from "./common/copy";
+} from "./copy";
 
 function App() {
   return (
