@@ -1,6 +1,6 @@
 # Personal Homepage
 
-*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
+###### *This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
 My personal homepage serving as an online portfolio. You can [**check out**](https://michal-owsiak.github.io/personal-homepage) what my programming skills are, and browse through the projects that are fetched from my GitHub profile API.
 
@@ -12,7 +12,7 @@ My personal homepage serving as an online portfolio. You can [**check out**](htt
 - CSS
 - HTML
 
-### Libraries & Frameworks
+### Libraries
 
 - React
 - Redux
