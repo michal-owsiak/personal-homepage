@@ -7,6 +7,7 @@ export const skillsetList = [
   "HTML",
   "CSS (Flex, Grid, BEM)",
   "Styled Components",
+  "Responsive Web Design",
   "JavaScript (ES6+)",
   "JSX",
   "React",
@@ -20,12 +21,14 @@ export const skillsetList = [
   "Redux-Saga",
   "NPM",
   "Git",
+  "Markdown",
   "GitHub Pull Requests & Reviews",
+  "Trello",
   "Figma",
 ];
 
 export const toLearnList = [
-  "SAAS & SCSS",
+  "SAAS/SCSS",
   "TypeScript",
   "React Context",
   "Unit Testing",
