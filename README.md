@@ -1,49 +1,89 @@
 # Personal Homepage
 
-###### *This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
+<span style="font-size: smaller; font-weight: bold;"><em>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a></em></span>.
 
-My personal homepage serving as an online portfolio. You can [**check out**](https://michal-owsiak.github.io/personal-homepage) what my programming skills are, and browse through the projects that are fetched from my GitHub profile API.
+Welcome to my personal online portfolio. You can [**check out**](https://michal-owsiak.github.io/personal-homepage) what my programming skills are, and browse through the projects that are fetched from my GitHub profile API.
 
 ![screenshot](https://github.com/michal-owsiak/personal-homepage/blob/main/src/images/demo.gif?raw=true)
+
+## Functionality
+
+### Fetching Repositories
+
+<span style="font-size: smaller; font-weight: bold;"><em>This section outlines how the portfolio tiles retrieve data from the GitHub API and the process it undergoes before rendering the portfolio.</em></span>
+
+
+The data inside the portfolio tiles is fetched from GitHub network-based API, using asynchronous function and ```Axios``` library. The fetched data is then passed to ```sortAndFilterProjects``` asynchronous function which sorts repositories by the date of creation, and then filters only those repositories which are included in the ```desiredProjectsIds``` array. The output array is finally passed to the custom hook     ```useSortedAndFilteredProjects```. Depending on the states returned from this hook, rendering function of ```Projects``` component displays either loading animation, error prompt, or the actual fetched portfolio.  
+
+### Theme Toggling
+
+**Reducer:**  
+
+<span style="font-size: smaller; font-weight: bold;"><em>The website's color theme can be toggled between light and dark modes. This section explains how this functionality is achieved through the use of a Redux reducer.</em></span>
+
+The reducer, named `themeSlice`, handles the toggling logic. It listens for actions that toggle between boolean values, representing whether dark mode is on or off. These actions are dispatched when the user clicks the `ThemeButton` component.  
+
+The `ThemeProvider` component retrieves the boolean value from the `selectIsThemeDark` selector, provided by the reducer. Depending on whether the value is `true` (indicating dark mode) or `false` (indicating light mode), the `ThemeProvider` applies the corresponding set of colors - `darkTheme` or `lightTheme`.  
+
+The initial theme state is read by the reducer from local storage. When no theme data is found in local storage (e.g., during the user's first visit), the `getDarkFromLocalStorage` function returns `false`, setting the light theme as the default one.  
+
+
+**Saga:** 
+
+<span style="font-size: smaller; font-weight: bold;"><em>In addition to the Redux reducer, the application uses `Redux-Saga` middleware to manage the theme toggling functionality.</em></span>
+
+
+The `themeSaga` is responsible for handling the `saveDarkInLocalStorage` function when dispatched action changes the state of `dark` boolean value. It retrieves the boolean information from the `selectIsThemeDark` selector and subsequently calls the `saveDarkInLocalStorage` function, passing retrieved information to it. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
+
+
 
 ## Tools Used
 
 ### Languages
 
+```bash
 - JavaScript (ES6+) with JSX Syntax
 - CSS
 - HTML
+```
 
 ### Libraries
 
+```bash
 - React
+- Axios
 - Redux
 - Redux-Toolkit
+- Redux-Saga
 - Styled-Components
+```
 
-## Available Scripts
+## Installation and Usage
 
-In the project directory, you can run:
+To get started with this project, follow these steps:
 
-### `npm start`
+1. Clone this repository.
+2. Run `npm install` to install the required dependencies.
+3. Run `npm start` to launch the development server. The app will be available at [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To build the app for production, use:
 
-### `npm run build`
+```bash
+npm run build
+```
+This command creates an optimized production build in the build folder, ready for deployment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run deploy
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This command is a convenient shortcut that both builds the application (as a predeploy action) and deploys it. It's useful for quickly deploying your app to your hosting platform.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
+```bash
+npm run eject
+```
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
