@@ -3,11 +3,11 @@ import { StyledThemeCaption } from "./styled";
 import { selectIsThemeDark } from "../../../../theme/themeSlice";
 
 const ThemeCaption = () => {
-  const darkTheme = useSelector(selectIsThemeDark);
+  const dark = useSelector(selectIsThemeDark);
 
   return (
     <StyledThemeCaption>
-      Dark mode {darkTheme ?  "on" : "off"}
+      Dark mode {dark ?  "on" : "off"}
     </StyledThemeCaption>
   );
 };
