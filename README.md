@@ -19,7 +19,7 @@ The data inside the portfolio tiles is fetched from GitHub network-based API, us
 
 #### **Theme Toggling - Reducer:**
 
-***The website's color theme can be toggled between light and dark modes. This section explains how this functionality is achieved through the use of a Redux reducer.***
+***The website's color theme can be toggled between light and dark modes. This section explains how this functionality is achieved through the use of a `Redux` reducer.***
 
 The reducer, named `themeSlice`, handles the toggling logic. It listens for actions that toggle between boolean values, representing whether dark mode is on or off. These actions are dispatched when the user clicks the `ThemeButton` component.  
 
@@ -30,7 +30,7 @@ The initial theme state is read by the reducer from local storage. When no theme
 
 #### **Theme Toggling - Saga:**
 
-***In addition to the Redux reducer, the application uses `Redux-Saga` middleware to manage the theme toggling functionality.***
+***In addition to the `Redux` reducer, the application uses `Redux-Saga` middleware to manage the theme toggling functionality.***
 
 
 The `themeSaga` is responsible for handling the `saveDarkInLocalStorage` function when a dispatched action changes the state of `dark` boolean value. The saga retrieves the boolean information from the `selectIsThemeDark` selector and subsequently calls the `saveDarkInLocalStorage` function, passing retrieved information to it. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
