@@ -1,21 +1,16 @@
 import { Frame, IconWrapper, SunIcon, StyledButton } from "./styled";
-import { selectIsThemeDark, switchDarkTheme, switchLightTheme } from "../../../../themes/themeSlice";
+import { selectIsThemeDark, toggleTheme } from "../../../../theme/themeSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
   const darkTheme = useSelector(selectIsThemeDark);
-
-  const toggleTheme = () => {
-    darkTheme ?
-      dispatch(switchLightTheme()) : dispatch(switchDarkTheme());
-  };
-
+  
   return (
-    <StyledButton onClick={toggleTheme}>
+    <StyledButton onClick={() => dispatch(toggleTheme())}>
       <Frame />
-      <IconWrapper data-dark={darkTheme}>
-        <SunIcon />
+      <IconWrapper>
+        <SunIcon data-dark={darkTheme}/>
       </IconWrapper>
     </StyledButton>
   );

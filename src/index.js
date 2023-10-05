@@ -6,16 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './globalStyle';
 import store from './store';
-import { selectCurrentTheme } from './themes/themeSlice';
+import { selectIsThemeDark } from './theme/themeSlice';
+import { lightTheme, darkTheme } from './theme/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const AppWrapper = () => {
-  const currentTheme = useSelector(selectCurrentTheme);
+  const dark = useSelector(selectIsThemeDark);
 
   return (
     <React.StrictMode>
-      <ThemeProvider theme={currentTheme}>
+      <ThemeProvider theme={
+        dark ? darkTheme : lightTheme
+      }>
         <GlobalStyle />
         <App />
       </ThemeProvider>
