@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
-  const darkTheme = useSelector(selectIsThemeDark);
+  const dark = useSelector(selectIsThemeDark);
 
   return (
     <StyledButton onClick={() => dispatch(toggleTheme())}>
       <Frame />
-        <IconWrapper dark={darkTheme}>
+        <IconWrapper dark={dark}>
           <SunIcon />
         </IconWrapper>
     </StyledButton>
