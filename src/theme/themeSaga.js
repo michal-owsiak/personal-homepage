@@ -7,7 +7,7 @@ function* saveDarkInLocalStorageHandler() {
     const dark = yield select(selectIsThemeDark);
     yield call(saveDarkInLocalStorage, dark);
   } catch (error) {
-    console.error(error);
+    console.error("Error while saving theme state in local storage", error);
   }
 };
 
