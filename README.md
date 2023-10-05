@@ -33,7 +33,7 @@ The initial theme state is read by the reducer from local storage. When no theme
 ***In addition to the `Redux` reducer, the application uses `Redux-Saga` middleware to manage the theme toggling functionality.***
 
 
-The `themeSaga` is responsible for handling the `saveDarkInLocalStorage` function when a dispatched action changes the state of `dark` boolean value. The saga retrieves the boolean information from the `selectIsThemeDark` selector and subsequently calls the `saveDarkInLocalStorage` function, passing retrieved information to it. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
+The `themeSaga` is responsible for handling the `saveDarkInLocalStorage` function when a dispatched action changes the state of `dark` boolean value. The saga retrieves the boolean information from the `selectIsThemeDark` selector and subsequently calls the `saveDarkInLocalStorage` function, passing retrieved information to it, and thus saving the value in local storage. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
 
 
 
