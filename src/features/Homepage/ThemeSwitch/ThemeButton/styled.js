@@ -30,8 +30,7 @@ export const IconWrapper = styled.div`
   display: flex;
   position: absolute;
   transition: transform 0.3s;
-  
-  &[data-dark="true"] {
-    transform: translateX(22px);
-  }
+  transform: translateX(
+    ${props => (props.dark ? "22px" : "0")}
+  );
 `;
