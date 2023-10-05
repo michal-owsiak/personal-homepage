@@ -13,7 +13,7 @@ Welcome to my personal online portfolio. You can [**check out**](https://michal-
 ***This section outlines how the portfolio tiles retrieve data from the GitHub API and the process it undergoes before rendering the portfolio.***
 
 
-The data inside the portfolio tiles is fetched from GitHub network-based API, using asynchronous function and ```Axios``` library. The fetched data is then passed to ```sortAndFilterProjects``` asynchronous function which sorts repositories by the date of creation, and then filters only those repositories which are included in the ```desiredProjectsIds``` array. The output array is finally passed to the custom hook     ```useSortedAndFilteredProjects```. Depending on the states returned from this hook, rendering function of ```Projects``` component displays either loading animation, error prompt, or the actual fetched portfolio.  
+The data inside the portfolio tiles is fetched from GitHub network-based API, using asynchronous function and `Axios` library. The fetched data is then passed to [`sortAndFilterProjects`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/features/Homepage/Portfolio/Projects/sortAndFilterProjects.js) asynchronous function which sorts repositories by the date of creation, and then filters only those repositories which are included in the [`desiredProjectsIds`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/features/Homepage/Portfolio/Projects/desiredProjectsIds.js) array. The output array is finally passed to the custom hook [`useSortedAndFilteredProjects`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/features/Homepage/Portfolio/Projects/useSortedAndFilteredProjects.js). Depending on the states returned from this hook, rendering function of [`Projects`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/features/Homepage/Portfolio/Projects/index.js) component displays either loading animation, error prompt, or the actual fetched portfolio.  
 
 ### **Theme Toggling**
 
@@ -21,11 +21,11 @@ The data inside the portfolio tiles is fetched from GitHub network-based API, us
 
 ***The website's color theme can be toggled between light and dark modes. This section explains how this functionality is achieved through the use of a `Redux` reducer.***
 
-The reducer, named `themeSlice`, handles the toggling logic. It listens for actions that toggle between boolean values, representing whether dark mode is on or off. These actions are dispatched when the user clicks the `ThemeButton` component.  
+The reducer, named [`themeSlice`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeSlice.js), handles the toggling logic. It listens for actions that toggle between boolean values, representing whether dark mode is on or off. These actions are dispatched when the user clicks the [`ThemeButton`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/features/Homepage/ThemeSwitch/ThemeButton/index.js) component.  
 
-The `ThemeProvider` component retrieves the boolean value from the `selectIsThemeDark` selector, provided by the reducer. Depending on whether the value is `true` (indicating dark mode) or `false` (indicating light mode), the `ThemeProvider` applies the corresponding set of colors - `darkTheme` or `lightTheme`.  
+The [`ThemeProvider`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/index.js) component retrieves the boolean value from the [`selectIsThemeDark`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeSlice.js) selector, provided by the reducer. Depending on whether the value is `true` (indicating dark mode) or `false` (indicating light mode), the [`ThemeProvider`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/index.js)  applies the corresponding set of colors - [`darkTheme`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/theme.js) or [`lightTheme`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/theme.js).  
 
-The initial theme state is read by the reducer from local storage. When no theme data is found in local storage (e.g., during the user's first visit), the `getDarkFromLocalStorage` function returns `false`, setting the light theme as the default one.  
+The initial theme state is read by the reducer from local storage. When no theme data is found in local storage (e.g., during the user's first visit), the [`getDarkFromLocalStorage`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeLocalStorage.js) function returns `false`, setting the light theme as the default one.  
 
 
 #### **Theme Toggling - Saga:**
@@ -33,7 +33,7 @@ The initial theme state is read by the reducer from local storage. When no theme
 ***In addition to the `Redux` reducer, the application uses `Redux-Saga` middleware to manage the theme toggling functionality.***
 
 
-The `themeSaga` is responsible for handling the `saveDarkInLocalStorage` function when a dispatched action changes the state of `dark` boolean value. The saga retrieves the boolean information from the `selectIsThemeDark` selector and subsequently calls the `saveDarkInLocalStorage` function, passing retrieved information to it, and thus saving the value in local storage. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
+The [`themeSaga`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeSaga.js) is responsible for handling the [`saveDarkInLocalStorage`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeLocalStorage.js) function when a dispatched action changes the state of [`dark`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeSlice.js) boolean value. The saga retrieves the boolean information from the [`selectIsThemeDark`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeSlice.js) selector and subsequently calls the [`saveDarkInLocalStorage`](https://github.com/michal-owsiak/personal-homepage/blob/main/src/theme/themeLocalStorage.js) function, passing retrieved information to it, and thus saving the value in local storage. This approach ensures that the user's chosen theme preference is stored in local storage, providing a seamless experience between visits.
 
 
 
