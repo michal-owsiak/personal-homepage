@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
 
 export const GitHubIcon = styled(Icon)`
   fill: ${({ theme }) => theme.color.mainBlue};
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 32px;
@@ -31,6 +32,7 @@ export const Header = styled.h1`
   font-weight: 900;
   letter-spacing: 1.5px;
   margin: 12px auto 8px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 18px;
@@ -44,6 +46,7 @@ export const Subheader = styled.h2`
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 0 0 24px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 17px;

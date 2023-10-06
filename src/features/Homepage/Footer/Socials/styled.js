@@ -9,7 +9,7 @@ export const StyledLogo = (Logo) => styled(Logo)`
   fill: ${({ theme }) => theme.color.mainText};
   width: 48px;
   height: 48px;
-  transition: 0.4s;
+  transition: 0.3s;
 
   &:hover {
     fill: ${({ theme }) => theme.color.mainBlue};

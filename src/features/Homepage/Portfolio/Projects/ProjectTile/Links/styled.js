@@ -15,6 +15,7 @@ export const Title = styled.span`
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 14px;
@@ -30,6 +31,7 @@ export const Link = styled.a`
   text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderline};
   transition: 0.2s;
   word-break: break-word;
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.8;

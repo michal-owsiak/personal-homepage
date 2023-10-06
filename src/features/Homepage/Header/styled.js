@@ -30,6 +30,7 @@ export const ThisIs = styled.h2`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 0 auto 8px; 
@@ -42,6 +43,7 @@ export const Name = styled.h1`
   font-weight: 900;
   letter-spacing: 1.9px;
   margin: 12px auto 35px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 22px;
@@ -57,6 +59,7 @@ export const Bio = styled.p`
   letter-spacing: 1px;
   margin: 0 auto 32px;
   word-wrap: break-word;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 17px;

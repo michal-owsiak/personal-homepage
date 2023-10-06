@@ -25,6 +25,7 @@ export const Name = styled.h1`
   font-weight: 700;
   letter-spacing: 1.2px;
   margin: 0;
+    transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 16px;
@@ -38,6 +39,7 @@ export const Description = styled.p`
   line-height: 1.4;
   letter-spacing: 0.9px;
   margin: 24px auto;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     line-height: normal;

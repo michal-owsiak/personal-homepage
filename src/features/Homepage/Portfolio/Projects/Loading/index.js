@@ -1,4 +1,4 @@
-import { loadingText } from "../../../../../common/copy";
+import { loadingText } from "../../../../../common/data";
 import { Caption, LoadingImage } from "./styled";
 
 const Loading = () => (

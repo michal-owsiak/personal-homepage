@@ -11,6 +11,7 @@ export const LetsTalk = styled.h2`
   line-height: 1.3;
   text-transform: uppercase;
   margin: 0 auto 24px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 0 auto 12px;
@@ -27,7 +28,7 @@ export const MailText = styled.p`
   font-weight: 900;
   letter-spacing: 1.6px;
   margin: 0 auto 24px;
-  transition: 0.4s;
+  transition: 0.3s;
 
   &:hover{
     color: ${({ theme }) => theme.color.mainBlue};
@@ -46,6 +47,7 @@ export const Caption = styled.p`
   line-height: 1.4;
   letter-spacing: 0.9px;
   margin-bottom: 56px;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 14px;
