@@ -1,7 +1,8 @@
-import Picture from "./Picture";
+import portrait from "../../../images/portrait.jpg"
 import Button from "../../../common/Button";
 import {
   Wrapper,
+  Image,
   ThisIs,
   Name,
   Bio,
@@ -15,7 +16,9 @@ const Header = () => (
   <>
     <ThemeSwitch />
     <Wrapper>
-      <div><Picture /></div>
+      <div>
+        <Image src={portrait} alt="Portrait" />
+      </div>
       <div>
         <ThisIs>This is</ThisIs>
         <Name>{name}</Name>
