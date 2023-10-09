@@ -3,9 +3,9 @@ import { ReactComponent as WarningIcon } from "../../../../../images/error_icon.
 
 export const ErrorImage = styled(WarningIcon)`
   display: flex;
-  margin: 64px auto 0;
-  width: 48px;
-  height: 48px;
+  margin: 48px auto 0;
+  width: 36px;
+  height: 36px;
 
   path {
     stroke: ${({ theme }) => theme.color.mainText};
@@ -15,27 +15,27 @@ export const ErrorImage = styled(WarningIcon)`
 export const ErrorHeader = styled.h1`
   color: ${({ theme }) => theme.color.mainText};
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1.2px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 
 export const ErrorText = styled.p`
   color: ${({ theme }) => theme.color.secondaryText};
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
-  margin: 32px auto;
-  max-width: 420px;
+  margin: 24px auto;
+  max-width: 315px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 16px;
+    font-size: 12px;
   }
 `;
 

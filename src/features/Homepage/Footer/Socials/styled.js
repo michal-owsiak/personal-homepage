@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  gap: 24px;
+  gap: 18px;
 `;
 
 export const StyledLogo = (Logo) => styled(Logo)`
   fill: ${({ theme }) => theme.color.mainText};
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   transition: 0.3s;
 
   &:hover {
@@ -16,7 +16,7 @@ export const StyledLogo = (Logo) => styled(Logo)`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
   }
 `;

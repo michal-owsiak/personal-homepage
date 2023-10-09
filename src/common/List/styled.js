@@ -16,16 +16,21 @@ export const StyledList = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  padding: 4px;
+  padding: 3px;
   display: block;
   line-height: 1.4;
+  font-size: 13px;
   &:before {
     background: ${({ theme }) => theme.color.mainBlue};
     content: "";
     display: inline-block;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-right: 12px;
   };
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 12px;
+  }
 `;

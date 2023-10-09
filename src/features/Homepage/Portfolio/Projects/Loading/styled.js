@@ -4,23 +4,23 @@ import { ReactComponent as Spinner } from "../../../../../images/loading_icon.sv
 export const Caption = styled.p`
   color: ${({ theme }) => theme.color.mainText};
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1px;
-  margin: 64px auto 48px;
+  margin: 48px auto 36px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 14px;
+    font-size: 11px;
   }
 `;
 
 export const LoadingImage = styled(Spinner)`
   stroke: ${({ theme }) => theme.color.mainBlue};
   display: flex;
-  margin: 0 auto 20px;
-  width: 160px;
-  height: 160px;
+  margin: 0 auto 15px;
+  width: 120px;
+  height: 120px;
   animation: spin 4s infinite linear;
   
   @keyframes spin {
@@ -29,7 +29,7 @@ export const LoadingImage = styled(Spinner)`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 `;

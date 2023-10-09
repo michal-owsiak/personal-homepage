@@ -10,19 +10,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    max-width: 1216px;
-    margin: 115px auto 109px;
+    max-width: 912px;
+    margin: 86px auto 82px;
     padding: 0 16px;
     font-family: 'Inter', sans-serif;
     background: ${({ theme }) => theme.color.mainBackground};
     transition: 0.3s;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin: 21px auto 31px;
+    margin: 16px auto 23px;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) and 
       (max-width: ${({ theme }) => theme.breakpoints.smallScreen}) {
-        margin: 64px auto 72px;
+        margin: 48px auto 54px;
       }
   }
 `;

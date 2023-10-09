@@ -25,12 +25,12 @@ export const Frame = styled(SwitchIcon)`
 export const IconWrapper = styled.div`
   background: ${({ theme }) => theme.color.secondaryText};
   border-radius: 50%;
-  padding: 3px;
-  margin: 3px;
+  padding: 2px;
+  margin: 2px;
   display: flex;
   position: absolute;
   transition: transform 0.3s;
   transform: translateX(
-    ${props => (props.dark ? "22px" : "0")}
+    ${props => (props.dark ? "16.5px" : "0")}
   );
 `;

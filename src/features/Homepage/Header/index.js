@@ -24,7 +24,7 @@ const Header = () => (
         <Name>{name}</Name>
         <Bio>{bio}</Bio>
         <MailLink href={`mailto:${mail}`}>
-          <Button icon={<Message />} caption="Hire Me" />
+          <Button icon={<Message />} caption="Mail Me" />
         </MailLink>
       </div>
     </Wrapper>

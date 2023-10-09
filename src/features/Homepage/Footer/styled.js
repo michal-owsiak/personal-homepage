@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.div`
-  max-width: 670px;
+  max-width: 420px;
 `;
 
 export const LetsTalk = styled.h2`
   color: ${({ theme }) => theme.color.secondaryText};
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
-  margin: 0 auto 24px;
+  margin: 0 auto 18px;
   transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin: 0 auto 12px;
+    margin: 0 auto 9px;
   }
 `;
 
@@ -24,10 +24,10 @@ export const MailLink = styled.a`
 
 export const MailText = styled.p`
   color: ${({ theme }) => theme.color.mainText};
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: 1.6px;
-  margin: 0 auto 24px;
+  margin: 0 auto 18px;
   transition: 0.3s;
 
   &:hover{
@@ -35,22 +35,23 @@ export const MailText = styled.p`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 18px;
-    margin: 0 auto 12px;
+    font-size: 14px;
+    margin: 0 auto 9px;
   }
 `;
 
 export const Caption = styled.p`
   color: ${({ theme }) => theme.color.mainText};
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.9px;
-  margin-bottom: 56px;
+  text-align: justify;
+  margin-bottom: 42px;
   transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 14px;
-    margin-bottom: 40px;
+    font-size: 10px;
+    margin-bottom: 30px;
   }
 `;
