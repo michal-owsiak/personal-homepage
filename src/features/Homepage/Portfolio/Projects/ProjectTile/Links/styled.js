@@ -29,7 +29,6 @@ export const Link = styled.a`
   line-height: 1.4;
   letter-spacing: 0.9px;
   text-decoration: underline 1px solid ${({ theme }) => theme.color.linkUnderline};
-  transition: 0.2s;
   word-break: break-word;
   transition: 0.3s;
 

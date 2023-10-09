@@ -25,7 +25,7 @@ export const Name = styled.h1`
   font-weight: 700;
   letter-spacing: 1.2px;
   margin: 0;
-    transition: 0.3s;
+  transition: 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 16px;

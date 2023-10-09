@@ -16,7 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background: ${({ theme }) => theme.color.mainBackground};
     transition: 0.3s;
-
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 21px auto 31px;
     }
