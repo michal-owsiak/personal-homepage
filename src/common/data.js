@@ -1,7 +1,7 @@
 export const name = "Michał Owsiak";
 
 export const bio =
-  "Frontend Developer with proficiency in\u00A0React. Skilled in\u00A0JavaScript, CSS, and\u00A0modern web technologies. Explore my portfolio to see how I\u00A0implement these skills in real projects. Currently seeking new job opportunities in\u00A0the\u00A0frontend development field. Feel free to reach out!";
+  "Frontend Developer with proficiency in\u00A0React. Skilled in\u00A0JavaScript, CSS, and\u00A0modern web technologies. Explore my portfolio to see how I\u00A0implement these skills in real projects. If you'd like to collaborate, feel free to reach out!";
 
 export const skillsetList = [
   "HTML",
