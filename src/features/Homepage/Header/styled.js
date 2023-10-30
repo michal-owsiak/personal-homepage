@@ -24,7 +24,7 @@ export const Image = styled.img`
   }
 `
 
-export const ThisIs = styled.h2`
+export const Hello = styled.h2`
   color: ${({ theme }) => theme.color.secondaryText};
   font-size: 9px;
   font-weight: 700;

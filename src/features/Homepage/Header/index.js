@@ -3,7 +3,7 @@ import Button from "../../../common/Button";
 import {
   Wrapper,
   Image,
-  ThisIs,
+  Hello,
   Name,
   Bio,
   Message,
@@ -20,7 +20,7 @@ const Header = () => (
         <Image src={portrait} alt="Portrait" />
       </div>
       <div>
-        <ThisIs>Hello, I'm</ThisIs>
+        <Hello>Hello, I'm</Hello>
         <Name>{name}</Name>
         <Bio>{bio}</Bio>
         <MailLink href={`mailto:${mail}`}>
