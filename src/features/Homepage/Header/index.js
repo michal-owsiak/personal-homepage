@@ -20,7 +20,7 @@ const Header = () => (
         <Image src={portrait} alt="Portrait" />
       </div>
       <div>
-        <ThisIs>This is</ThisIs>
+        <ThisIs>Hello, I'm</ThisIs>
         <Name>{name}</Name>
         <Bio>{bio}</Bio>
         <MailLink href={`mailto:${mail}`}>
