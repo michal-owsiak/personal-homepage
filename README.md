@@ -14,7 +14,7 @@ Welcome to my personal online portfolio. You can check out what my programming s
 
 ### **Languages**
 
-```bash
+```
 - JavaScript (ES6+) with JSX Syntax
 - CSS
 - HTML
@@ -22,7 +22,7 @@ Welcome to my personal online portfolio. You can check out what my programming s
 
 ### **Libraries**
 
-```bash
+```
 - React
 - Axios
 - Redux
