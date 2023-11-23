@@ -10,7 +10,7 @@ export const sortAndFilterProjects = async () => {
       const dateA = new Date(a.created_at);
       const dateB = new Date(b.created_at);
 
-      return dateA - dateB;
+      return dateB - dateA;
     });
 
     const filteredReposArray = sortedReposArray.filter((repo) => {
