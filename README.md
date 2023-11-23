@@ -6,7 +6,7 @@ Welcome to my personal online portfolio. You can check out what my programming s
 
 ### **Demo**
 
-[https://bit.ly/personal-homepage](https://bit.ly/personal-homepage)
+[https://michal-owsiak.github.io/personal-homepage/](https://michal-owsiak.github.io/personal-homepage/)
 
 ![screenshot](https://github.com/michal-owsiak/personal-homepage/blob/main/src/images/demo.gif?raw=true)
 
